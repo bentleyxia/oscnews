@@ -20,11 +20,13 @@ export default class DevDocument extends Component {
       tag: props.conf.docTag,
       query: '',
       subMenu: [
-        { title: '我的收藏', tag: '__star__' },
-        { title: '全部', tag: '' },
-        { title: '前端', tag: '前端' },
-        { title: '后端', tag: '后端' },
-        { title: '工具', tag: '工具库' },
+        { title: 'Star', tag: '__star__' },
+        { title: 'ALL', tag: '' },
+        { title: 'Cheatsheet', tag: 'Cheatsheet' },
+        { title: 'Programming Language', tag: 'Programming Language' },
+        { title: 'FrontEnd', tag: '前端' },
+        { title: 'BackEnd', tag: '后端' },
+        { title: 'Tools', tag: 'Tools' },
       ],
     };
   }
@@ -71,9 +73,9 @@ export default class DevDocument extends Component {
     return (
       <div className={styles.warpper}>
         <div className={styles.header}>
-          <span className={styles.title}>开发文档</span>
+          <span className={styles.title}>Development Documents</span>
           <div className={styles.tag}>
-            {!this.state.tag && <input placeholder="输入搜索内容" className={styles.search} onChange={this.onSearch.bind(this)} />}
+            {!this.state.tag && <input placeholder="Search" className={styles.search} onChange={this.onSearch.bind(this)} />}
             {this.state.subMenu.map((item, idx) => {
               return (
                 <span

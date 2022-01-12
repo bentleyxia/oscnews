@@ -26,7 +26,7 @@ export default class Edit extends Component {
     this.setListData();
     this.onHideEdit();
     const documentSource = {
-      label: '开发文档',
+      label: 'Development Documents',
       value: 'document',
       children: [],
     };

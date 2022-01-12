@@ -9,28 +9,29 @@ import Search from './pages/Search';
 import Todo from './pages/Todo';
 
 export const getNavData = () => [
+  // {
+  //   title: '空白页',
+  //   type: 'blank',
+  //   component: Blank,
+  // },
   {
-    title: '空白页',
-    type: 'blank',
-    component: Blank,
-  }, {
-    title: '导航',
+    title: 'Navigation',
     type: 'navigation',
     component: Navigation,
   }, {
-    title: '清单',
+    title: 'Todo',
     type: 'todo',
     component: Todo,
   }, {
-    title: '搜索',
+    title: 'Search',
     type: 'search',
     component: Search,
   }, {
-    title: '命令',
+    title: 'Command',
     type: 'linux',
     component: Linux,
   }, {
-    title: '开发文档',
+    title: 'Documents',
     type: 'document',
     component: Documents,
   },
@@ -40,7 +41,7 @@ export const getNavData = () => [
   //   component: Github,
   // },
   {
-    title: '历史记录',
+    title: 'History',
     type: 'history',
     component: Historys,
   },
